@@ -15,7 +15,7 @@ Before setting up the Private Network, make sure IPFS is set as global **PATH** 
 
 > **NOTE** 📋 For Mac and Linux Systems, the path is automatically set as global during the time of installation.
 
-**I. Automated Script:** Download the [script]() depending on the platform.
+**I. Automated Script:** Download the [script and swarm key](https://github.com/rubixchain/rubixnetwork/tree/master/setupscripts) depending on the platform.
 **MAC / Linux Users**
 1. Open a terminal in the downloaded location and execute the following:
 	```
@@ -40,7 +40,7 @@ Execute the command `ipfs init` in your terminal. This generates a unique `PeerI
 Sample Peer Identity: "QmeRAkURreUeWsZ5yovKSpNEC4U7UcAd91cYpbNhx4ovY"
 
 1.  The IPFS Daemon should be running till the setup process is finished. To run the daemon, execute `ipfs daemon` in the terminal.
-2.  Download the [Swarm Key]() and place it in the IPFS repo directory. 
+2.  Download the [Swarm Key](https://github.com/rubixchain/rubixnetwork/blob/master/setupscripts/LinScript/swarm.key) and place it in the IPFS repo directory. 
    
      **Windows:** /Users/<username\>/.ipfs/
      **Mac:** /Users/<username\>/.ipfs/
@@ -90,7 +90,7 @@ IPFS Private Network Setup is Successfully Finished ✅
 		"data": "9989198712,user@rubix.network"  
 	   }'
 	  ```  
-For more on Rubix API, visit [Rubix API Docs]()
+For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md)
 You have successfully created a Decentralized Identity for your node ✅
 
 # Rubix Token Application
@@ -124,4 +124,4 @@ Just like how we just created a node and DID, there are millions in the network 
 	* Returns: Transaction ID (String), Success / Failure (Boolean)
 	*/
 	```
-For more on Rubix API, visit [Rubix API Docs]()
+For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md)
