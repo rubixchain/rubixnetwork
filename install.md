@@ -5,9 +5,13 @@ This will walk you through the way towards setting up the Rubix Environment.
 ### Prerequisites
 
 -   **Java 10.0.2 JDK** - We currently support version 10.0.2. Further support will be available soon.
+
     Download Link: [Java](https://www.oracle.com/java/technologies/java-archive-javase10-downloads.html)
+    
 -   **go-ipfs v0.4.22** - IPFS, a distributed file system is used for storage. We support go-ipfs of specific versions (0.4.18 - 0.4.22) 
+
     Download Link: [IPFS](https://dist.ipfs.io/go-ipfs)
+    
 After installing IPFS, follow the steps mentioned to setup [Private Network](#setup-private-ipfs-network)
 
 ### Setup Private IPFS Network 
@@ -16,6 +20,7 @@ Before setting up the Private Network, make sure IPFS is set as global **PATH** 
 > **NOTE** 📋 For Mac and Linux Systems, the path is automatically set as global during the time of installation.
 
 **I. Automated Script:** Download the [script and swarm key](https://github.com/rubixchain/rubixnetwork/tree/master/setupscripts) depending on the platform.
+
 **MAC / Linux Users**
 1. Open a terminal in the downloaded location and execute the following:
 	```
@@ -32,7 +37,6 @@ Before setting up the Private Network, make sure IPFS is set as global **PATH** 
 	```
 	> ipfs daemon
 	```
-
 **II. Manual Setup:**
 
 Execute the command `ipfs init` in your terminal. This generates a unique `PeerID` for the node.
@@ -48,6 +52,7 @@ Sample Peer Identity: "QmeRAkURreUeWsZ5yovKSpNEC4U7UcAd91cYpbNhx4ovY"
 
 
 3.  The default bootstrap nodes should be replaced with Rubix bootstrap nodes.
+
      Execute the following commands in your terminal :
 	```
 	> ipfs bootstrap rm --all
@@ -62,6 +67,7 @@ Sample Peer Identity: "QmeRAkURreUeWsZ5yovKSpNEC4U7UcAd91cYpbNhx4ovY"
 	> ipfs bootstrap add /ip4/13.71.82.252/tcp/4003/ipfs/Qme4EQV4YGgtiAoTy3n1RB2sHMtW4KQq97ydnpV2Hh6npr
 	```
 4.  For peers within the network to discover and communicate with each other, Auto Relay and LibP2P functionalities should be enabled.
+
      Do the following in your terminal:
 	   ```
      > ipfs config --json Swarm.EnableAutoRelay true
@@ -90,7 +96,8 @@ IPFS Private Network Setup is Successfully Finished ✅
 		"data": "9989198712,user@rubix.network"  
 	   }'
 	  ```  
-For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md)
+For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md).
+
 You have successfully created a Decentralized Identity for your node ✅
 
 # Rubix Token Application
@@ -124,4 +131,4 @@ Just like how we just created a node and DID, there are millions in the network 
 	* Returns: Transaction ID (String), Success / Failure (Boolean)
 	*/
 	```
-For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md)
+For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md).
