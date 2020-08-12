@@ -14,8 +14,8 @@ A deterministic state-machine that is designed to address the scale, cost, and p
 * Non-Linear Secret Sharing (NLSS)
 
 # Getting Started
-1. Follow the Rubix [Installation]() Procedure 
-2. For more information, go through [Rubix Docs]()
+1. Follow the Rubix [Installation](https://github.com/rubixchain/rubixnetwork/blob/master/install.md) Procedure 
+2. For more information, go through [Rubix Docs](https://github.com/rubixchain/rubixnetwork/blob/master/features.md)
 3. You can query at [Rubix Discussion Forum]()
 
 # Useful Links
@@ -47,6 +47,6 @@ This Project is currently developed in Java. Multi-Language support will be avai
 
 # Specs and Papers
 
-* Specifications of Rubix - [specs]()
+* Specifications of Rubix - [specs](https://github.com/rubixchain/rubixnetwork/blob/master/features.md)
 
 * Biege Paper - [paper]()
