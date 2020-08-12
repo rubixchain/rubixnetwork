@@ -22,10 +22,6 @@ Rubix Network contains nodes that join Rubix Private IPFS network. Private IPFS 
 
 Every node that joins our network discovers other nodes in the network with the peer discovery concept of IPFS. The communication between the nodes is peer-to-peer and is encrypted. Rubix uses LibP2P protocol in order to establish direct communication between the nodes. 
 
-For Example, If Alice wants to communicate with Bob, Alice forwards the data using unique Application name and Bob's PeerID. Bob listens on the same Application name used by Alice.
-
-IMAGE/GIF
-
 The data is known only to the nodes who are involved in the communication. There is no global broadcast of data across the network.
 
 To know more about how LibP2P communication works, refer [LibP2P Protocol.](#https://docs.libp2p.io/tutorials/getting-started/go/)
@@ -45,8 +41,8 @@ The DID of a node is publicly verifiable. Anyone in the network can verify any n
 
 ## Non-Linear Secret Sharing
 Non-Linear secret sharing is a type of secret sharing scheme in which the shares are generated using Non-Linear function thus preventing Tompa-Wall attack. There are two types of schemas.
-1. NLSS $(m,n)$ - A total of $n$ shares are generated for a secret out of which any $m$ shares are required to recreate the secret.
-2. NLSS $(k,m,n)$ - Here, a secret is split into $n$ shares and a total of $m$ shares are required to regenerate the secret out of which $k$ shares should be part of $m$ shares. Any $m$ shares without the presence of $k$ shares will not recreate the secret.
+1. NLSS (m,n) - A total of **n** shares are generated for a secret out of which any **m** shares are required to recreate the secret.
+2. NLSS (k,m,n) - Here, a secret is split into **n** shares and a total of **m** shares are required to regenerate the secret out of which **k** shares should be part of **m** shares. Any **m** shares without the presence of **k** shares will not recreate the secret.
 
 The Shares obtained are of same size. Shares of different size will not recombine. If any of the share is corrupted or modified, the recombined image will not match the DID. So, the tampering of shares can be easily detected.
 
@@ -75,7 +71,7 @@ Whenever a node joins the network, node purchases tokens from Rubix token issuan
 
 ProofChain contains the Token hash, Proof of the node holding the token, Public Share of the node, PeerID of the node. 
 
-For example, If G (Token issuance node) transfers a token T to A, ProofChain P~T~ contains P~GT~ where P~GT~ is the Proof of G. If A transfers to B, P~T~ contains P~GT~ + P~AT~ . This way, the ProofChain is formed.
+For example, If G (Token issuance node) transfers a token T to A, ProofChain P<sub>T</sub> contains P<sub>GT</sub> where P<sub>GT</sub> is the Proof of G. If A transfers to B, P<sub>T</sub> contains P<sub>GT</sub> + P<sub>AT</sub> . This way, the ProofChain is formed.
 
 ### ProofChain Verification
 The signatures can be verified by using NLSS recombination of Proof and the corresponding positions of the Public Share of the node. The recombined result is matched with the positions of the DID of the respective node. If it matches the proof is verified. For detailed explanation, refer [P2P Authentication.](#peer-peer-authentication)
@@ -105,7 +101,7 @@ The Signature and the Public Share positions are recombined using NLSS. The reco
 Once authenticated, the signature is added to the ProofChain.
 
 ## Rubix Consensus Protocol
-Consensus is an agreement among few nodes in the network about a particular transaction. Nodes involved in consensus verify whether a transaction is genuine or not. Rubix Consensus protocol is a Light-weight Protocol which follows PBFT rule i.e., $2n +1$ out of $3n + 1$ nodes are required to reach an agreement.
+Consensus is an agreement among few nodes in the network about a particular transaction. Nodes involved in consensus verify whether a transaction is genuine or not. Rubix Consensus protocol is a Light-weight Protocol which follows PBFT rule i.e., **2n +1** out of **3n + 1** nodes are required to reach an agreement.
 
 ### Quorum Selection
 Quorum are the nodes running the consensus protocol. They are selected from the ProofChain of the Token that is being transferred in the transaction.
@@ -145,12 +141,14 @@ This way no node in the network can reuse the token that is already spent. Hence
 Forking can be used for denial of service attacks. This is possible if nodes create some duplicate nodes in the network and transfer same token. 
 
 Consider the following ProofChain P~T~ of token T.
-P~GT~ --> P~AT~--> P~BT~--> P~CT~--> P~DT~--> P~ET~
+
+P<sub>GT</sub> --> P<sub>AT</sub> --> P<sub>BT</sub> --> P<sub>CT</sub> --> P<sub>DT</sub> --> P<sub>ET</sub> 
 
 This states that the initial owner of token T is node G and the current owner is node E. Token T has transferred from G to A, A to B, B to C, C to D and D to E. Now, when C creates a duplicate node C' and transfers the token to another node F. 
 
 The ProofChain of node F looks like:
-P~GT~ --> P~AT~--> P~BT~--> P~C'T~--> P~FT~
+
+P<sub>GT</sub> --> P<sub>AT</sub> --> P<sub>BT</sub> --> P<sub>C'T</sub> --> P<sub>FT</sub>
 
 When node F tries to commit the token, it can find out that two nodes C' and E committed the token. To detect the fork, F challenges C' and E to submit the ProofChains. By tracing the ProofChains backwards, it is found that node C made a fork.
 
