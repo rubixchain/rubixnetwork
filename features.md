@@ -32,7 +32,7 @@ A Node joining the Rubix network acquires an identity called as Decentralized ID
 DID is a unique identifier which is designed to eliminate the dependency on the Central Authorities for providing the identity. This enables the controller of a DID to reveal the information he/she wishes to ensuring full privacy and security of DID.
 
 ### How a DID is generated?
-To generate a DID, a node should have IPFS PeerID. The peerid is hashed using secure hashing algorithm SHA3-256 and is embedded into a gray scale image of size $1024 \times 256$.
+To generate a DID, a node should have IPFS PeerID. The peerid is hashed using secure hashing algorithm SHA3-256 and is embedded into a gray scale image of size **1024 X 256**.
 
 Once the DID for a node is generated, the DID is split using Non-Linear Secret Sharing ([NLSS](#non-linear-secret-sharing)) into 4 shares. The size of the shares obtained will be 64 times that of the DID image. 1 out of 4 shares is a Public Share and the remaining 3 are Private Shares. Public Share acts a unique Wallet Identifier like mobile number for communication. The Private shares should be securely stored by the node.
 
