@@ -1,5 +1,4 @@
-<img src="http://rubix.network/assets/images/Ruoix-logo.png" alt="Rubix" style="text-align:center; display:block; margin-left:auto; margin-right:auto; width:50%">
- 
+
 # Rubix - ProofChain
 
 A deterministic state-machine that is designed to address the scale, cost, and privacy shortcomings of blockchain protocols that rely on one sequentially organized chain of all global transactions. The global state-machine is divided into finite number of state-machines called ProofChains. While each ProofChain maintains one state, together all ProofChains represent a globally accessible singleton state that is immutable. 
@@ -19,7 +18,7 @@ A deterministic state-machine that is designed to address the scale, cost, and p
 3. You can query at [Rubix Discussion Forum]()
 
 # Useful Links
-* [Website](https://www.rubix.network)
+* [Website]()
 * [Documentation]()
 * [Twitter]()
 * [Telegram]()
