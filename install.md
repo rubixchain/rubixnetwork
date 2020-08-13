@@ -47,7 +47,9 @@ Sample Peer Identity: "QmeRAkURreUeWsZ5yovKSpNEC4U7UcAd91cYpbNhx4ovY"
 2.  Download the [Swarm Key](https://github.com/rubixchain/rubixnetwork/blob/master/setupscripts/LinScript/swarm.key) and place it in the IPFS repo directory. 
    
      **Windows:** /Users/<username\>/.ipfs/
+     
      **Mac:** /Users/<username\>/.ipfs/
+     
      **Linux:** /home/<username\>/.ipfs/
 
 
