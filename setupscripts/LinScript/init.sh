@@ -2,7 +2,6 @@ user=$(whoami)
 IPFS_PATH=/home/$user/.ipfs ipfs init
 cp -R swarm.key /home/$user/.ipfs
 IPFS_PATH=/home/$user/.ipfs ipfs bootstrap rm --all 
-IPFS_PATH=/home/$user/.ipfs ipfs bootstrap add /ip4/183.82.0.114/tcp/4001/ipfs/QmeRAkURreUeWsZ5yovKSpNEC4U7UcAd91cYpbNhx4ovYW
 IPFS_PATH=/home/$user/.ipfs ipfs bootstrap add /ip4/52.172.51.38/tcp/4001/ipfs/QmRdExYiDHN6VtFmYN24nCimmAMz83FQmDuZmtpnteURiq
 IPFS_PATH=/home/$user/.ipfs ipfs bootstrap add /ip4/52.172.51.38/tcp/4002/ipfs/QmenpqsPquKTWbwuV48fgSYz7XhoDkgAfABEtc3xF7Jsry
 IPFS_PATH=/home/$user/.ipfs ipfs bootstrap add /ip4/52.172.51.38/tcp/4003/ipfs/QmPRX8w7xng24soPJTPSWcY2LEkPyc4WfUAayiymb9Ndcu
