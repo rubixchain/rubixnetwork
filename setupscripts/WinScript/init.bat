@@ -1,7 +1,6 @@
 ipfs init
 xcopy "%CD%\swarm.key" "C:\Users\%USERNAME%\.ipfs" /K /D /H /Y
 ipfs bootstrap rm --all
-ipfs bootstrap add /ip4/183.82.0.114/tcp/4001/ipfs/QmeRAkURreUeWsZ5yovKSpNEC4U7UcAd91cYpbNhx4ovYW
 ipfs bootstrap add /ip4/52.172.51.38/tcp/4001/ipfs/QmRdExYiDHN6VtFmYN24nCimmAMz83FQmDuZmtpnteURiq
 ipfs bootstrap add /ip4/52.172.51.38/tcp/4002/ipfs/QmenpqsPquKTWbwuV48fgSYz7XhoDkgAfABEtc3xF7Jsry
 ipfs bootstrap add /ip4/52.172.51.38/tcp/4003/ipfs/QmPRX8w7xng24soPJTPSWcY2LEkPyc4WfUAayiymb9Ndcu
