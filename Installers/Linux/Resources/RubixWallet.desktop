@@ -1,0 +1,11 @@
+[Desktop Entry]
+Categories=Utility;
+Comment=Send and recieve tokens using this app
+Exec=java -jar /usr/share/rubix/RubixWallet.jar
+GenericName=Wallet
+Icon=/usr/share/rubix/RubixWallet.png
+Name=RubixWallet
+Terminal=true
+Type=Application
+Version=1.0
+X-Deepin-Vendor=user-custom
