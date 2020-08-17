@@ -87,15 +87,17 @@ IPFS Private Network Setup is Successfully Finished ✅
 # Rubix DID Creation
 
 1.  Make sure IPFS Daemon is running. If not, execute the command `ipfs daemon `
-2.  Download the DID Creator jar from here: [Link]()
-3.  Open a terminal. Go to the downloaded location and run the following command
-    ` java -jar DIDCreation.jar `
+2.  Download the DID Creator executable based on your platform : [Link](https://github.com/rubixchain/rubixnetwork/tree/master/Installers)
+3.  Run the RubixDID executable
 4.  Send an API request to you node to create a new DID. 
 	 ``` java
-	  $ curl -X POST http://localhost:9501/create -d 
-	  '{  
-		"data": "9989198712,user@rubix.network"  
-	   }'
+	  $ curl --header "Content-Type: application/json" --request POST --data '{ "data": "9876543333,user@rubix.network"}' http://localhost:9501/create
+  
+	/**  
+	* This API call does DID creation with the given input parameters
+	* Inputs: data (String)
+	* Returns: DID (String)
+	*/
 	  ```  
 For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md).
 
@@ -104,28 +106,22 @@ You have successfully created a Decentralized Identity for your node ✅
 # Rubix Token Application
 
 1.  Make sure IPFS Daemon is up and running. If not, execute the command `ipfs daemon`
-2.  Download the Token Transfer jar from here: [Link]()
-3.  Open a terminal. Go to the downloaded location and run the following command `java -jar TokenTransfer.jar`
+2.  Download the Token Application executable based on your platform : [Link](https://github.com/rubixchain/rubixnetwork/tree/master/Installers)
+3.  Run the RubixWallet executable
 
 Just like how we just created a node and DID, there are millions in the network with their identities that has to be synced with other peers in the network.
 
 1.  Send an API request to your node to sync the nodes in the network.
 	```java
-	 $ curl -X GET http://localhost:8881/sync -d
+	 $ curl --header "Content-Type: application/json" --request GET http://localhost:8881/sync
 	/**
 	* Returns: None
 	*/
 	```
 2.  Now that the nodes are synced, with the knwoledge of receiver's DID tokens can be transffered.
 	```java
-	 $ curl -X POST http://localhost:8881/start -d  
-	 {
-	    "receiver": "75239D03C9A8BD9381C16B0D78A21A1493B1D2AB982DA8824EF068471FF96020",
-	    "tokenCount":1,
-	    "quorum":"[]",
-	    "threadExt":"t1",
-	    "comment":"transaction comments"
-	 }
+	$ curl --header "Content-Type: application/json" --request POST --data '{ "receiver": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "tokenCount":1, "quorum":"[]", "threadExt":"t1", "comment":"transaction comments"}' http://localhost:8881/start
+
 	/**
 	* This API call transfer tokens with the given input parameters
 	* Inputs: receiver (String), tokenCount (Integer), quorum (JSONArrayList), threadExt (String), comment (String)
