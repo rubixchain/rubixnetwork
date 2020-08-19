@@ -19,6 +19,6 @@
         <key>CFBundleVersion</key>
         <string>8.0</string>
         <key>JVMMainClassName</key>
-        <string>org.springframework.boot.loader.JarLauncher</string>
+       <string>org.springframework.boot.loader.JarLauncher</string>
 </dict>
 </plist>

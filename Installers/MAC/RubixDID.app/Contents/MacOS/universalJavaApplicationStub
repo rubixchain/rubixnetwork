@@ -795,6 +795,3 @@ exec "${JAVACMD}" \
 		"${JVMMainClass}"\
 		${MainArgsArr:+ "${MainArgsArr[@]}"}\
 		${ArgsPassthru:+ "${ArgsPassthru[@]}"}
-
-
-$SHELL		

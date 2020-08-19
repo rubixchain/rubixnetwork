@@ -21,7 +21,14 @@ Before setting up the Private Network, make sure IPFS is set as global **PATH** 
 
 **I. Automated Script:** Download the [script and swarm key](https://github.com/rubixchain/rubixnetwork/tree/master/setupscripts) depending on the platform.
 
-**MAC / Linux Users**
+**Windows**
+1. Double click the `init.bat` file
+2.  Open a new terminal and run the following command to start the daemon
+	```
+	> ipfs daemon
+	```
+	
+**MAC / Linux**
 1. Open a terminal in the downloaded location and execute the following:
 	```
 	> chmod +x init.sh
@@ -31,12 +38,7 @@ Before setting up the Private Network, make sure IPFS is set as global **PATH** 
 	```
 	> ipfs daemon
 	```
-**Windows Users**
-1. Double click the `init.bat` file
-2.  Open a new terminal and run the following command to start the daemon
-	```
-	> ipfs daemon
-	```
+
 **II. Manual Setup:**
 
 Execute the command `ipfs init` in your terminal. This generates a unique `PeerID` for the node.
@@ -88,8 +90,23 @@ IPFS Private Network Setup is Successfully Finished ✅
 
 1.  Make sure IPFS Daemon is running. If not, execute the command `ipfs daemon `
 2.  Download the DID Creator executable based on your platform : [Link](https://github.com/rubixchain/rubixnetwork/tree/master/Installers)
-3.  Run the RubixDID executable
-4.  Send an API request to you node to create a new DID. 
+3.  **Windows**
+	Double Click the .exe file to run the application 
+4.  **MAC**
+	Execute the following commands in the terminal from the same directory
+	```
+		> chmod +x RubixDID.app/Contents/MacOS/universalJavaApplicationStub
+		> open RubixDID.app
+	```
+5.  **Linux**
+	Execute the following commands in the terminal from the same directory 
+	```
+		> chmod +x install.sh
+		> sudo ./install.sh
+	```
+	RubixDID.desktop file will be created in Applications list
+	
+6.  Send an API request to you node to create a new DID. 
 	 ``` java
 	  $ curl --header "Content-Type: application/json" --request POST --data '{ "data": "9876543333,user@rubix.network"}' http://localhost:9501/create
   
@@ -107,8 +124,22 @@ You have successfully created a Decentralized Identity for your node ✅
 
 1.  Make sure IPFS Daemon is up and running. If not, execute the command `ipfs daemon`
 2.  Download the Token Application executable based on your platform : [Link](https://github.com/rubixchain/rubixnetwork/tree/master/Installers)
-3.  Run the RubixWallet executable
-
+3.  **Windows**
+	Double Click the .exe file to run the application
+4.  **MAC Users**
+	Execute the following commands in the terminal from the same directory 
+	```
+		> chmod +x RubixWallet.app/Contents/MacOS/universalJavaApplicationStub
+		> open RubixWallet.app
+	```
+5.	**Linux**
+	Execute the following commands in the terminal from the same directory 
+	```
+		> chmod +x install.sh
+		> sudo ./install.sh
+	```
+	RubixWallet.desktop file will be created in Applications list
+	
 Just like how we just created a node and DID, there are millions in the network with their identities that has to be synced with other peers in the network.
 
 1.  Send an API request to your node to sync the nodes in the network.
