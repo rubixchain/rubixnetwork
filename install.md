@@ -133,12 +133,12 @@ You have successfully created a Decentralized Identity for your node ✅
 
      Double Click the .exe file to run the application
      
-4.  **MAC Users**
+4.  **MAC**
 
     Execute the following commands in the terminal from the same directory 
      ```
-	  > chmod +x RubixWallet.app/Contents/MacOS/universalJavaApplicationStub
-	  > open RubixWallet.app
+	 > chmod +x RubixWallet.app/Contents/MacOS/universalJavaApplicationStub
+	 > open RubixWallet.app
      ```
 5.  **Linux**
     
