@@ -21,8 +21,8 @@ A deterministic state-machine that is designed to address the scale, cost, and p
 * [Website]()
 * [Documentation]()
 * [Twitter]()
-* [Telegram]()
-* [Discussion Forum]()
+* [Telegram](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
+* [Discussion Forum](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
 
 # Project Links
 
