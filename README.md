@@ -21,7 +21,7 @@ However,the transaction capabiltity of Rubix network increases with more users i
 The below table depicts the number of nodes required for achieving certain amount of tps.
 
 | **TPS**             | **Number of Nodes**          
-| :-------------------|-------------------:|
+| :-------------------| :-------------------:|
 | 1000                | 200   |
 | 5000                | 1000  |
 | 10000               | 2000  |
