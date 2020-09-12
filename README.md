@@ -33,12 +33,12 @@ Rubix can achieve 10 million tps with 2 million users, whereas bitcoin with same
 # Getting Started
 1. Follow the Rubix [Installation](https://github.com/rubixchain/rubixnetwork/blob/master/install.md) Procedure 
 2. For more information, go through [Rubix Docs](https://github.com/rubixchain/rubixnetwork/blob/master/features.md)
-3. You can query at [Rubix Discussion Forum]()
+3. You can query at [Rubix Discussion Forum](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
 
 # Useful Links
-* [Website]()
-* [Documentation]()
-* [Twitter]()
+* [Website](https://rubix.network/)
+* [Documentation](https://rubix.network/)
+* [Twitter](https://twitter.com/RubixChain)
 * [Telegram](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
 * [Discussion Forum](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
 
@@ -64,6 +64,6 @@ This Project is currently developed in Java. Multi-Language support will be avai
 
 # Specs and Papers
 
-* Specifications of Rubix - [specs](https://github.com/rubixchain/rubixnetwork/blob/master/features.md)
+* Specifications of Rubix - [specs](https://rubix.network/)
 
 * Biege Paper - [paper](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix_Beige.pdf)
