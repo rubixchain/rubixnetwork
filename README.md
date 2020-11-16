@@ -48,7 +48,7 @@ This Project is currently developed in Java. Multi-Language support will be avai
 
 | **Language**        | **Project**           | **Completeness**  |
 | :-------------------|:---------------------:| -----------------:|
-| Java                | https://github.com/rubixchain/rubixcorejava | **Alpha** |
+| Java                | https://github.com/rubixchain/java-api | **Alpha** |
 | Python              | https://github.com/rubixchain/py-rubix | Available Soon |
 | Kotlin              | https://github.com/rubixchain/kotlin-rubix | Available Soon |
 | go                  | https://github.com/rubixchain/go-rubix | Available Soon |
