@@ -42,7 +42,7 @@ Rubix can achieve 10 million tps with 2 million users, whereas bitcoin with same
 * [Telegram](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
 * [Discussion Forum](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
 
-# Project Links
+# Project Private Links
 
 This Project is currently developed in Java. Multi-Language support will be available soon.
 
@@ -57,7 +57,7 @@ This Project is currently developed in Java. Multi-Language support will be avai
 
 | **Language**        | **Project**           | **Completeness**  |
 | :-------------------|:---------------------:| -----------------:|
-| Java                | https://github.com/rubixchain/java-rubix-api | 100% |
+| Java                | https://github.com/rubixchain/java-rubix-api | **Alpha(Private)** |
 | Python              | https://github.com/rubixchain/py-rubix-api | Available Soon |
 | Kotlin              | https://github.com/rubixchain/kotlin-rubix-api | Available Soon |
 | Go                  | https://github.com/rubixchain/go-rubix-api | Available Soon |
