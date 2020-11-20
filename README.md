@@ -32,8 +32,7 @@ Rubix can achieve 10 million tps with 2 million users, whereas bitcoin with same
 
 # Getting Started
 1. Follow the Rubix [Installation](https://github.com/rubixchain/rubixnetwork/blob/master/install.md) Procedure 
-2. For more information, go through [Rubix Docs](https://github.com/rubixchain/rubixnetwork/blob/master/features.md)
-3. You can query at [Rubix Discussion Forum](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
+2. You can query at [Rubix Discussion Forum](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
 
 # Useful Links
 * [Website](https://rubix.network/)
