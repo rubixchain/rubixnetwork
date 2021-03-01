@@ -9,7 +9,7 @@ A deterministic state-machine that is designed to address the scale, cost, and p
 * Light-Weight Proof of Work (LWPOW)
 * Asynchronous Parallelism
 * Double Spending and Fork Resolution
-* Pre-Mined , hard capped native tokens with publicly verifiable , immutable mathematical proofs
+* Hard capped native tokens with publicly verifiable , immutable mathematical proofs
 * Non-Linear Secret Sharing (NLSS)
 
 # Transaction Speed and Finality
