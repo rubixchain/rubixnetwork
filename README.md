@@ -6,7 +6,7 @@ A deterministic state-machine that is designed to address the scale, cost, and p
 # Features
 
 * Instant Confirmation and Finality of Transaction
-* Proof of Harvest (POH)
+* Proof of Harvest (PoH)
 * Asynchronous Parallelism
 * Double Spending and Fork Resolution
 * Hard capped native tokens with publicly verifiable , immutable mathematical proofs
