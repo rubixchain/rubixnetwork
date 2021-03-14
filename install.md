@@ -91,17 +91,11 @@ IPFS Private Network Setup is Successfully Finished ✅
 
 1.  Make sure IPFS Daemon is up and running. If not, execute the command `ipfs daemon`
 2.  Download your wallet executable based on your platform : 
-3.  **Windows**
-
-     [Link](https://drive.google.com/uc?export=download&id=1nQARbZsA-wHePCxj95-gPOuKgiR9W0hH)
+3.  **Windows** [Link](https://drive.google.com/uc?export=download&id=1nQARbZsA-wHePCxj95-gPOuKgiR9W0hH)
      
-4.  **MAC**
-
-    [Link](https://drive.google.com/uc?export=download&id=1zC6MINvvsCzlrNfK-NpwoILYXukOn_sD)
-     ```
-5.  **Linux**
-    
-     [Link](https://drive.google.com/uc?export=download&id=1TvaEjyN3903QkrcuruLttbtm9q3zIknU)
-      ```
+4.  **MAC** [Link](https://drive.google.com/uc?export=download&id=1zC6MINvvsCzlrNfK-NpwoILYXukOn_sD)
+     
+5.  **Linux** [Link](https://drive.google.com/uc?export=download&id=1TvaEjyN3903QkrcuruLttbtm9q3zIknU)
+      
 	
 For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md).
