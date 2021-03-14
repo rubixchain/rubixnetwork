@@ -86,87 +86,22 @@ Sample Peer Identity: "QmeRAkURreUeWsZ5yovKSpNEC4U7UcAd91cYpbNhx4ovY"
 
 IPFS Private Network Setup is Successfully Finished ✅
 
-# Rubix DID Creation
 
-1.  Make sure IPFS Daemon is running. If not, execute the command `ipfs daemon `
-2.  Download the DID Creator executable based on your platform : [Link](https://github.com/rubixchain/rubixnetwork/tree/master/Installers)
-3.  **Windows**
-    
-    Double Click the .exe file to run the application 
-    
-4.  **MAC**
-
-    Execute the following commands in the terminal from the same directory
-     ```
-	> chmod +x RubixDID.app/Contents/MacOS/universalJavaApplicationStub
-	> open RubixDID.app
-     ```
-     
-5.  **Linux**
-
-    Execute the following commands in the terminal from the same directory  
-    ```
-	> chmod +x install.sh
-	> sudo ./install.sh
-    ```
-    RubixDID.desktop file will be created in Applications list
-	
-6.  Send an API request to you node to create a new DID. 
-	 ``` java
-	  $ curl --header "Content-Type: application/json" --request POST --data '{ "data": "9876543333,user@rubix.network"}' http://localhost:9501/create
-  
-	/**  
-	* This API call does DID creation with the given input parameters
-	* Inputs: data (String)
-	* Returns: DID (String)
-	*/
-	  ```  
-For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md).
-
-You have successfully created a Decentralized Identity for your node ✅
-
-# Rubix Token Application
+# Rubix Wallet
 
 1.  Make sure IPFS Daemon is up and running. If not, execute the command `ipfs daemon`
-2.  Download the Token Application executable based on your platform : [Link](https://github.com/rubixchain/rubixnetwork/tree/master/Installers)
+2.  Download your wallet executable based on your platform : 
 3.  **Windows**
 
-     Double Click the .exe file to run the application
+     [Link](https://drive.google.com/uc?export=download&id=1nQARbZsA-wHePCxj95-gPOuKgiR9W0hH)
      
 4.  **MAC**
 
-    Execute the following commands in the terminal from the same directory 
-     ```
-	 > chmod +x RubixWallet.app/Contents/MacOS/universalJavaApplicationStub
-	 > open RubixWallet.app
+    [Link](https://drive.google.com/uc?export=download&id=1zC6MINvvsCzlrNfK-NpwoILYXukOn_sD)
      ```
 5.  **Linux**
     
-     Execute the following commands in the terminal from the same directory 
-      ```
-	  > chmod +x install.sh
-	  > sudo ./install.sh
+     [Link](https://drive.google.com/uc?export=download&id=1TvaEjyN3903QkrcuruLttbtm9q3zIknU)
       ```
 	
-      RubixWallet.desktop file will be created in Applications list
-	
-Just like how we just created a node and DID, there are millions in the network with their identities that has to be synced with other peers in the network.
-
-1.  Send an API request to your node to sync the nodes in the network.
-	```java
-	 $ curl --header "Content-Type: application/json" --request GET http://localhost:8881/sync
-	/**
-	* Returns: None
-	*/
-	```
-2.  Now that the nodes are synced, with the knwoledge of receiver's DID tokens can be transffered.
-	```java
-	$ curl --header "Content-Type: application/json" --request POST --data '{ "receiver": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "tokenCount":1, "quorum":"[]", "threadExt":"t1", "comment":"transaction comments"}' http://localhost:8881/start
-
-	/**
-	* This API call transfer tokens with the given input parameters
-	* Inputs: receiver (String), tokenCount (Integer), quorum (JSONArrayList), threadExt (String), comment (String)
-	* Returns: Transaction ID (String), Success / Failure (Boolean)
-	*/
-	```
 For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md).
