@@ -16,7 +16,7 @@ A deterministic state-machine that is designed to address the scale, cost, and p
 
 All transactions in Rubix network reaches a state of instant confirmation. This is in contrast with the traditional blockchain models where a transaction/block is only probabilistically final. Each transaction in Rubix network on average takes 200 milliseconds for confirmation. With Rubix parallel chain architecture, millions of such transactions can be performed simultaneously. The performance of blockchain or any client-server tends to degrade in general with more number of transactions which causes more loading to network. This is mainly beacuse of the restrictions to block size & resulting security restrictions. Bitcoins' layer 1 still approves only 3500 transactions in 10 minutes. This stays still irrespective to the number of full nodes in network. Other semi-centralized solutions are able to scale upto few thousands of transactions. In all cases, increase in the size and capability of nodes does not increase the transaction speed.
 
-However,the transaction capabiltity of Rubix network increases with more users in the network. Rubix maximizes the overall resource capability of the network. The peer to peer architecture compounded by the MPC based PoH(LWPoW) of Rubix means that the transaction range is limited only by the number of nodes in the network.
+However,the transaction capabiltity of Rubix network increases with more users in the network. Rubix maximizes the overall resource capability of the network. The peer to peer architecture compounded by the MPC based PoH of Rubix means that the transaction range is limited only by the number of nodes in the network.
 
 The below table depicts the number of nodes required for achieving certain amount of tps.
 
@@ -47,7 +47,7 @@ This Project is currently developed in Java. Multi-Language support will be avai
 
 | **Language**        | **Project**           | **Completeness**  |
 | :-------------------|:---------------------:| -----------------:|
-| Java                | https://github.com/rubixchain/rubixcorejava | **Alpha** |
+| Java                | https://github.com/rubixchain/rubixcorejava | **Alpha(Private)** |
 | Python              | https://github.com/rubixchain/py-rubix | Available Soon |
 | Kotlin              | https://github.com/rubixchain/kotlin-rubix | Available Soon |
 | go                  | https://github.com/rubixchain/go-rubix | Available Soon |
