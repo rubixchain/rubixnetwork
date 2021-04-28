@@ -6,9 +6,9 @@ This will walk you through the way towards setting up the Rubix Environment.
 
 -   **Java 10.0.2 JDK** - We currently support version 10.0.2. Further support will be available soon.
 
-    Download Link: [Java](https://www.oracle.com/java/technologies/java-archive-javase10-downloads.html)
+    Download Link: [Java](https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html#license-lightbox)
     
--   **go-ipfs v0.4.22** - IPFS, a distributed file system is used for storage. We support go-ipfs of specific versions (0.4.18 - 0.4.22) 
+-   **go-ipfs v0.6.0** - IPFS, a distributed file system is used for storage.
 
     Download Link: [IPFS](https://dist.ipfs.io/go-ipfs)
     
@@ -85,15 +85,6 @@ Sample Peer Identity: "QmeRAkURreUeWsZ5yovKSpNEC4U7UcAd91cYpbNhx4ovY"
     > **NOTE** 📋 The nodes that have same swarm key will have same fingerprint.
 
 IPFS Private Network Setup is Successfully Finished ✅
-
-
-# Rubix Wallet
-
-1.  Make sure IPFS Daemon is up and running. If not, execute the command `ipfs daemon`
-2.  Download your wallet executable based on your platform : 
-  [**Windows**](https://drive.google.com/uc?export=download&id=1nQARbZsA-wHePCxj95-gPOuKgiR9W0hH)
-  [**MAC**](https://drive.google.com/uc?export=download&id=1zC6MINvvsCzlrNfK-NpwoILYXukOn_sD)
-  [**Linux**](https://drive.google.com/uc?export=download&id=1TvaEjyN3903QkrcuruLttbtm9q3zIknU)
       
 	
 For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md).
