@@ -4,7 +4,7 @@ This will walk you through the way towards setting up the Rubix Environment.
 
 ### Prerequisites
 
--   **Java 10.0.2 JDK** - We currently support version 10.0.2. Further support will be available soon.
+-   **Java 11 JDK** - We currently support version java 11. Further support will be available soon.
 
     Download Link: [Java](https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html#license-lightbox)
     
