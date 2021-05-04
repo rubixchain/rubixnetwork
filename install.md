@@ -86,5 +86,8 @@ Sample Peer Identity: "QmeRAkURreUeWsZ5yovKSpNEC4U7UcAd91cYpbNhx4ovY"
 
 IPFS Private Network Setup is Successfully Finished ✅
       
+      
+      
+ Download Rubix jar [here](https://github.com/rubixchain/rubixnetwork/blob/master/core-0.0.1-SNAPSHOT.jar)   
 	
 For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md).
