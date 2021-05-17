@@ -1,112 +1,190 @@
-﻿# Rubix API
-### DID Creation
+# Rubix API Calls
 
-`create`: Creates a unique Decentralized IDentity derived from user defined parameters.
-```java
- $ curl --header "Content-Type: application/json" --request POST --data '{ "data": "9876543333,user@rubix.network"}' http://localhost:9501/create
-  
-/**  
-* This API call does DID creation with the given input parameters
-* Inputs: data (String)
-* Returns: DID (String)
-*/
-```
-> **NOTE** :clipboard: Ports 9501 and 8881 are used for API communication to the Client Libraries. 
+## DID Creation
 
-### Sync
-`sync`: To synchronize the DIDs of the systems, so that the node will have an updated list of all the DIDs in the network.
-```java
-$ curl --header "Content-Type: application/json" --request GET http://localhost:8881/sync
-/**
-* Returns: None
-*/
-```
+Creates a unique Decentralized IDentity 
+> $ curl --location --request POST 'http://localhost:1898/create' --form 'image=@<"image path"
+>' --form 'data={ "data": "9876543333,user@rubix.network"}'
 
-### Send Tokens
+***Request Type***:    POST
+***Port***:     1898
+***Input***:     data(String) and image(Multipart File)
+***Returns***: DID (String)
 
-`start`: Transfer tokens from one wallet address to another wallet address.
-```java
- $ curl --header "Content-Type: application/json" --request POST --data '{ "receiver": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "tokenCount":1, "quorum":"[]", "threadExt":"t1", "comment":"transaction comments"}' http://localhost:8881/start
 
-/**
-* This API call transfer tokens with the given input parameters
-* Inputs: receiver (String), tokenCount (Integer), quorum (JSONArrayList), threadExt (String), comment (String)
-* Returns: Transaction ID (String), Success / Failure (Boolean)
-*/
-```
-### Query Balance
-`getBalance`: Queries the token balance in the User's wallet.
-```java
- $ curl --header "Content-Type: application/json" --request GET http://localhost:8881/getBalance
-  
-/**
-* Inputs: None
-* Returns: Amount (Integer)
-*/
-```
-### Account Information
+## Initial Setup
 
-`accountInfo`: Retrieves the account details of a user which includes number of transactions, current balance, walletid, did etc.,
+Does the initial setup of IPFS and syncing the network nodes
+*Make sure to make this call before any other following calls*
+>$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/setup
 
-```java
- $ curl --header "Content-Type: application/json" --request GET http://localhost:8881/accountInfo
+***Request Type***:    GET
+***Port***:     1898
+***Input***:     nill
+***Returns***: nill
 
-/**  
-* Returns: DID (String), WalletID (WalletID), TransactionAsSender (Integer), TransactionAsReceiver (Integer), Amount (Integer)
-*/
-```
 
-### View Tokens
+## Transfer Tokens
 
-`viewtokens`: Lists all tokens available in User's wallet.
+Transfers token(s) from one wallet address to another 
+> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/initiateTransaction --data '{ "receiver": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "tokenCount":1, "comment":"transaction comments"}' 
 
-```java
- $ curl --header "Content-Type: application/json" --request GET http://localhost:8881/viewtokens
+***Request Type***:    POST
+***Port***:     1898
+***Input***:     receiver (String), tokenCount (Integer), comment (String)
+***Returns***: Transaction ID (String), Success / Failure (Boolean), DID (String)
+
+## Account Information
+Retrieves the user account details 
+
+>$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/getAccountInfo
+
+***Request Type***:    GET
+***Port***:     1898
+***Input***:  nill
+***Returns***: DID (String), WalletID (String), TransactionAsSender (Integer), TransactionAsReceiver (Integer), Balance (Integer)
+
+## Account Balance
+Check the balance in user's wallet
+
+>$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/getBalance
+
+***Request Type***:    GET
+***Port***:     1898
+***Input***:  nill
+***Returns***: Account Balance(Integer)
+
+## Get Transaction details with Transaction ID
+
+Details of a particular transaction like Quorum involved, token transferred, receiver details, time and more
+> $ curl --header "Content-Type: application/json" --request POST  http://localhost:1898/getTxnDetails --data '{"transactionID": "82A03ABB70495A2241D7FD51079A635040A145E4C701B2C1B0C2DC92CB79AFC A"}'
+
+***Request Type***:    POST
+***Port***:     1898
+***Input***:    transactionID (String)
+***Returns***:  senderDID(String), role(String), totalTime(Integer), tokens(ArrayList), comment(String), txn(String), receiverDID(String), Date(Date)
+
+
+## Get Transaction details with Date
+
+Retrieves the details of all the transactions committed during the specified period
+> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByDate --data '{"eDate":"2020-04-21", "sDate":"2020-04-02"}' 
  
-/**
-* Returns: TokenList (JSONArrayList)
-*/
-```
-### Transaction Details 
+ ***Request Type***:    POST
+***Port***:     1898
+***Input***:  sDate (String),  eDate (String)
+***Returns***: senderDID(String), role(String), totalTime(Integer), tokens(ArrayList), comment(String), txn(String), receiverDID(String), Date(Date)
 
-`gettxndetails`: Details of a particular transaction like Quorum involved, token transferred, receiver details etc.,
-```java
- $ curl --header "Content-Type: application/json" --request POST --data '{"transactionID": "82A03ABB70495A2241D7FD51079A635040A145E4C701B2C1B0C2DC92CB79AFCA"}' http://localhost:8881/gettxndetails
+## Get Transaction details with Comment
 
-/**
-* Inputs: transactionID (String)
-* Returns: QuorumList (JSONArrayList), ReceiverWID (String), Token (String), Time (String), Amount (Integer)
-*/
-```
-### Last N Transaction Details
-`txnsbycount`: Retrieves the account details of last N number of transactions.
-```java
- $ curl --header "Content-Type: application/json" --request POST --data '{"txnCount": 20}' http://localhost:8881/txnsbycount
+Retrieves the details of all the transactions committed with the specified comment
+> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByComment
+ --data '{"comment":"10,000Rs"}' 
+ 
+ ***Request Type***:    POST
+***Port***:     1898
+***Input***:  comment (String)
+***Returns***: senderDID(String), role(String), totalTime(Integer), tokens(ArrayList), comment(String), txn(String), receiverDID(String), Date(Date)
+## Get Transaction details with Count
 
-/**
-* Inputs: txnCount (Integer)
-* Returns: TransactionID (String), QuorumList (JSONArrayList), ReceiverWID (String), Token (String), Time (Timestamp), Amount (Integer)
-*/
-```
-### Transaction Details by Time Interval
+Retrieves the last specified count of transactions committed 
+> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByCount
+ --data '{"count" : 3}' 
+ 
+ ***Request Type***:    POST
+***Port***:     1898
+***Input***:  count (Integer)
+***Returns***: senderDID(String), role(String), totalTime(Integer), tokens(ArrayList), comment(String), txn(String), receiverDID(String), Date(Date)
 
-`txnbydate`: Retrieves the details of the transactions during a time period.
-```java
- $ curl --header "Content-Type: application/json" --request POST --data '{"eDate":"2020-04-21", "sDate":"2020-04-02"}' http://localhost:8881/txnsbydate 
-/**
-* Inputs: eDate (String), sDate (String)
-* Returns: TransactionID (String), QuorumList (JSONArrayList), ReceiverWID (String), Token (String), Time (String), Amount (Integer)
-*/
-```
-### View ProofChain
+## Get Transaction details with User's DID
 
-`viewproofchain`: Views proofchain of a particular token.
-```java
- $ curl --header "Content-Type: application/json" --request POST --data '{"token": "QmeRAkURreUeWsZ5yovKSpNEC4U7UcAd91cYpbNhx4ovYW"}' http://localhost:8881/viewproofchain  
-/**
-* Inputs: token (String)
-* Returns: ProofChain (String)
-*/
-```
+Retrieves all the transactions made with the input DID
+> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByDID
+ --data '{"did" : "QmdkrLpyoGFrhsbeuZrXpcvr2QRsLuQnrbXVfJTe1yXqzy"}' 
+ 
+ ***Request Type***:    POST
+***Port***:     1898
+***Input***:  did (String)
+***Returns***: List of all transactions and its details made with the did
+
+## View Proof Chains
+
+Views proofchain of the input token.
+>$ curl --header "Content-Type: application/json" --request POST http://localhost:1898/viewProofs --data '{"token": "Qma1dRiJYdHHx4zCFxKz8LEoNERwoqXYzSHFePkhhewbjE"}'
+
+***Request Type***:    POST
+***Port***:     1898
+***Input***:   token(String)
+***Returns***: ProofChain (String)
 
 
+## List of Tokens
+Lists out all the tokens available in the user's wallet
+>$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/viewTokens
+
+***Request Type***:    GET
+***Port***:     1898
+***Input***:   nill
+***Returns***: List of Tokens (JSONObject)
+
+## List of Peers Online
+
+Lists all your contacts currently available online
+>$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/getOnlinePeers
+
+***Request Type***:    GET
+***Port***:     1898
+***Input***:   nill
+***Returns***: List of objects: did(String), online/offline
+
+## View Contacts 
+
+Lists all your contacts
+>$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/getContactsList
+
+***Request Type***:    GET
+***Port***:     1898
+***Input***:   nill
+***Returns***: List of DIDs
+
+## Details for Dashboard
+
+Lists all required details of user's wallet
+>$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/getDashboard
+
+***Request Type***:    GET
+***Port***:     1898
+***Input***:   nill
+***Returns***: totalTxns(Integer), WalletID(String), balance(Integer), , receiverTxns(Integer), senderTxns(Integer), contactsCount(Integer), onlinePeers(Integer), transactionsPerDay(List), did(String)
+
+
+## Close Streams
+
+To close all the streams open
+>$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/p2pClose
+
+***Request Type***:    GET
+***Port***:     1898
+***Input***:   nill
+***Returns***: nill
+
+## Synchronise Network Nodes
+
+To synchronize the DIDs of the systems, so that the node will have an updated list of all the DIDs in the network.
+>$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/sync
+
+***Request Type***:    GET
+***Port***:     1898
+***Input***:   nill
+***Returns***: nill
+
+
+## Shutdown
+
+Closes all application processes and exits 
+>$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/shutdown
+
+***Request Type***:    GET
+***Port***:     1898
+***Input***:   nill
+***Returns***: nill
