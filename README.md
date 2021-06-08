@@ -65,4 +65,4 @@ This Project is currently developed in Java. Multi-Language support will be avai
 
 * Specifications of Rubix - [specs](https://rubix.network/)
 
-* Biege Paper - [paper](https://github.com/rubixchain/rubixnetwork/blob/master/RubiX_WhitePaper.pdf)
+* Biege Paper - [paper](https://github.com/rubixchain/rubixnetwork/blob/master/RubiX_WP.pdf)
