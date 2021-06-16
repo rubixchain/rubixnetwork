@@ -6,22 +6,22 @@ Creates a unique Decentralized IDentity
 > $ curl --location --request POST 'http://localhost:1898/create' --form 'image=@<"image path"
 >' --form 'data={ "data": "9876543333,user@rubix.network"}'
 
+
 ***Request Type***:    POST
-***Port***:     1898
-***Input***:     data(String) and image(Multipart File)
-***Returns***: DID (String)
+***Port***:            1898
+***Input***:           data(String) and [256x256] image(Multipart File)
+***Returns***:         DID (String)
 
 
 ## Initial Setup
 
 Does the initial setup of IPFS and syncing the network nodes
-*Make sure to make this call before any other following calls*
->$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/setup
+>$ curl --location --request GET 'http://localhost:1898/start'
 
 ***Request Type***:    GET
-***Port***:     1898
-***Input***:     nill
-***Returns***: nill
+***Port***:            1898
+***Input***:           nill
+***Returns***:         nill
 
 
 ## Transfer Tokens
@@ -30,9 +30,9 @@ Transfers token(s) from one wallet address to another
 > $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/initiateTransaction --data '{ "receiver": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "tokenCount":1, "comment":"transaction comments"}' 
 
 ***Request Type***:    POST
-***Port***:     1898
-***Input***:     receiver (String), tokenCount (Integer), comment (String)
-***Returns***: Transaction ID (String), Success / Failure (Boolean), DID (String)
+***Port***:            1898
+***Input***:           receiver (String), tokenCount (Integer), comment (String)
+***Returns***:         Transaction ID (String), Success / Failure (Boolean), DID (String)
 
 ## Account Information
 Retrieves the user account details 
