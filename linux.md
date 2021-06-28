@@ -1,3 +1,7 @@
+# Installation
+
+This will walk you through the way towards setting up the Rubix Environment.
+
 ### Prerequisites
 
 -   **Java 11 JDK** - We currently support version java 11. Further support will be available soon.
