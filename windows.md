@@ -12,7 +12,7 @@ This will walk you through the way towards setting up the Rubix Environment.
 
     Download Link: [IPFS](https://dist.ipfs.io/go-ipfs/v0.6.0/go-ipfs_v0.6.0_windows-amd64.zip)
     
-After installing IPFS, follow the steps mentioned to setup.
+After downloading IPFS, follow the steps mentioned to setup.
 
 ### Setup Private IPFS Network 
 **NOTE** 📋 Before setting up the Private Network, make sure Java and IPFS are set as global **PATH** for Windows.
