@@ -31,7 +31,7 @@ The below table depicts the number of nodes required for achieving certain amoun
 Rubix can achieve 10 million tps with 2 million users, whereas bitcoin with same number of full nodes publish approximately 7 transactions. A single node can perform 5 transactions per second. Similarly, in theory all nodes in the network can perform 5 completely independent transactions.
 
 # Getting Started
-1. Follow the Rubix [Installation](https://github.com/rubixchain/rubixnetwork/blob/master/install.md) Procedure 
+1. Follow the Rubix Installation Procedure depending on your OS - [Mac](https://github.com/rubixchain/rubixnetwork/blob/740a8d4a258f729714b04907192fcab16c24afc7/mac.md) / [Linux](https://github.com/rubixchain/rubixnetwork/blob/a56b8b0fe76454d7081c00d05607d0fcd812771a/linux.md) / [Windows](https://github.com/rubixchain/rubixnetwork/blob/e15ab5b7709657bd4c0e60dfb073bc84fff6958b/windows.md)
 2. You can query at [Rubix Discussion Forum](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
 
 # Useful Links
