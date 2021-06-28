@@ -10,13 +10,13 @@ This will walk you through the way towards setting up the Rubix Environment.
     
 -   **go-ipfs v0.6.0** - IPFS, a distributed file system is used for storage.
 
-    Download Link: [IPFS](https://github.com/rubixchain/rubixsetup/releases/tag/linux-ipfs)
+    Download Link: [IPFS](https://dist.ipfs.io/go-ipfs/v0.6.0/go-ipfs_v0.6.0_linux-amd64.tar.gz)
     
 After installing IPFS, follow the steps mentioned to setup.
 
 ### Setup Private IPFS Network 
 The path is automatically set as global during the time of installation.
-Download the [Script and Swarm key](https://github.com/rubixchain/rubixsetup/releases/tag/linux-setup) for automating the process of setting up private IPFS.
+Download the [Script and Swarm key](https://github.com/rubixchain/rubixsetup/raw/main/Linux-SetupScript.zip) for automating the process of setting up private IPFS.
 
 1. Open a terminal in the downloaded location and execute the following:
 	```
