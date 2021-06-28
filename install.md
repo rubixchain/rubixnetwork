@@ -10,7 +10,7 @@ This will walk you through the way towards setting up the Rubix Environment.
     
 -   **go-ipfs v0.6.0** - IPFS, a distributed file system is used for storage.
 
-    Download Link: [IPFS](https://dist.ipfs.io/go-ipfs)
+    Download Link: [IPFS](https://dist.ipfs.io/go-ipfs/v0.6.0)
     
 After installing IPFS, follow the steps mentioned to setup [Private Network](#setup-private-ipfs-network)
 
@@ -19,7 +19,7 @@ Before setting up the Private Network, make sure Java and IPFS are set as global
 
 > **NOTE** 📋 For Mac and Linux Systems, the path is automatically set as global during the time of installation.
 
-**I. Automated Script:** Download the [script and swarm key](https://github.com/rubixchain/rubixnetwork/tree/master/setupscripts) depending on the platform.
+**Automated Script:** Download the [script and swarm key](https://github.com/rubixchain/rubixnetwork/tree/master/setupscripts) depending on the platform.
 
 **Windows**
 1. Double click the `init.bat` file
@@ -39,52 +39,12 @@ Before setting up the Private Network, make sure Java and IPFS are set as global
 	> ipfs daemon
 	```
 
-**II. Manual Setup:**
-
-Execute the command `ipfs init` in your terminal. This generates a unique `PeerID` for the node.
-
-Sample Peer Identity: "QmeRAkURreUeWsZ5yovKSpNEC4U7UcAd91cYpbNhx4ovY"
-
-1.  The IPFS Daemon should be running till the setup process is finished. To run the daemon, execute `ipfs daemon` in the terminal.
-2.  Download the [Swarm Key](https://github.com/rubixchain/rubixnetwork/blob/master/setupscripts/LinScript/swarm.key) and place it in the IPFS repo directory. 
-   
-     **Windows:** /Users/<username\>/.ipfs/
-     
-     **Mac:** /Users/<username\>/.ipfs/
-     
-     **Linux:** /home/<username\>/.ipfs/
-
-
-3.  The default bootstrap nodes should be replaced with Rubix bootstrap nodes.
-
-     Execute the following commands in your terminal :
-	```
-	> ipfs bootstrap rm --all
-	> ipfs bootstrap add /ip4/183.82.0.114/tcp/4001/ipfs/QmcjERi3TqKfLdQp4ViSPMyfGj9oxWKZRAprkppxQc2uMm
-	
-	```
-4.  For peers within the network to discover and communicate with each other, Auto Relay and LibP2P functionalities should be enabled.
-
-     Do the following in your terminal:
-	   ```
-     > ipfs config --json Swarm.EnableAutoRelay true
-     > ipfs config --json Experimental.Libp2pStreamMounting true
-	 ```
-     
-5.  Once the above steps are finished, terminate IPFS using
-    `ipfs shutdown` command in the terminal.
-
-6.  Now, restart the daemon and check for the presence of unique fingerprint.
-
-    > **NOTE** 📋 The nodes that have same swarm key will have same fingerprint.
-
-
 IPFS Private Network Setup is Successfully Finished ✅
       
       
       
- Download Rubix jar [here](https://github.com/rubixchain/rubixnetwork/blob/master/rubix.jar)   
+ Download Rubix Wallet Applcation [here](https://github.com/rubixchain/rubixnetwork/blob/master/rubix.jar)   
  
- Open command prompt or terminal in jar location and run "java -jar rubix.jar"
+ Double Click the installer and follow the setup instructions
 	
 For more on Rubix API, visit [Rubix API Docs](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix%20API.md).
