@@ -6,7 +6,7 @@ This will walk you through the way towards setting up the Rubix Environment.
 
 -   **Java 11 JDK** - We currently support version java 11. Further support will be available soon.
 
-    Download Link: [Java](https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html#license-lightbox)
+    Download Link: [Java](https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html#license-lightbox)(File: jdk-11.0.10_osx-x64_bin.dmg)
     
 -   **go-ipfs v0.6.0** - IPFS, a distributed file system is used for storage.
 
