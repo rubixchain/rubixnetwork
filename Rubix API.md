@@ -3,7 +3,7 @@
 ## DID Creation
 
 Creates a unique Decentralized IDentity 
-> $ curl --location --request POST 'http://localhost:1898/create' --form 'data="Rubik"' --form 'image=@"<imagepath>"'
+> $ curl --location --request POST 'http://localhost:1898/create' --form 'data="Rubik"' --form 'image=@"imagepath"'
 
 
 ***Request Type***:    POST
