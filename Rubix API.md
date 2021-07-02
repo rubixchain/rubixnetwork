@@ -3,8 +3,7 @@
 ## DID Creation
 
 Creates a unique Decentralized IDentity 
-> $ curl --header "Content-Type: application/json" --request POST 'http://localhost:1898/create' --form 'image=@<"image path"
->' --form 'data={ "data": "9876543333,user@rubix.network"}'
+> $ curl --location --request POST 'http://localhost:1898/create' --form 'data="Rubik"' --form 'image=@"<imagepath>"'
 
 
 ***Request Type***:    POST
@@ -27,7 +26,7 @@ Does the initial setup of IPFS and syncing the network nodes
 ## Transfer Tokens
 
 Transfers token(s) from one wallet address to another 
-> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/initiateTransaction --data '{ "receiver": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "tokenCount":1, "comment":"transaction comments"}' 
+> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/initiateTransaction --data '{ "receiver": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "tokenCount":1, "comment":"transaction comments", "type":1}' 
 
 ***Request Type***:    POST
 ***Port***:            1898
