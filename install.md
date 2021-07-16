@@ -43,7 +43,7 @@ IPFS Private Network Setup is Successfully Finished ✅
       
       
       
- Download Rubix Wallet Applcation [here](https://github.com/rubixchain/rubixnetwork/blob/master/rubix.jar)   
+ Download Rubix Wallet Applcation [here](https://github.com/rubixchain/wallet/releases/)   
  
  Double Click the installer and follow the setup instructions
 	
