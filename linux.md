@@ -30,6 +30,6 @@ Download the [Script and Swarm key](https://github.com/rubixchain/rubixsetup/raw
 
 IPFS Private Network Setup is Successfully Finished ✅
       
-Download Rubix Wallet Applcation [here](https://github.com/rubixchain/wallet/releases/tag/v0.3)   
+Download Rubix Wallet Applcation [here](https://github.com/rubixchain/wallet/releases)   
  
 Double Click the installer and follow the setup instructions      
