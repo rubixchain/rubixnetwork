@@ -26,7 +26,7 @@ Download the [Script and Swarm key](https://github.com/rubixchain/rubixsetup/raw
 
 IPFS Private Network Setup is Successfully Finished ✅
       
-Download Rubix Jar File here [here](https://github.com/rubixchain/rubixnetwork/raw/main/Rubix.jar)
+Download Rubix Jar File here [here](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix.jar)
 
 Run the following command in command prompt to start the Jar
 ```
