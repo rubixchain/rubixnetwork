@@ -1,3 +1,8 @@
+<p align="center">
+  <a href="https://rubix.network">
+    <img alt="Solana" src="https://i.imgur.com/9vvn4vf.png" width="250" />
+  </a>
+</p>
 
 # Rubix - ProofChain
 
@@ -31,8 +36,8 @@ The below table depicts the number of nodes required for achieving certain amoun
 Rubix can achieve 10 million tps with 2 million users, whereas bitcoin with same number of full nodes publish approximately 7 transactions. A single node can perform 5 transactions per second. Similarly, in theory all nodes in the network can perform 5 completely independent transactions.
 
 # Getting Started
-1. Follow the Rubix Installation Procedure depending on your OS - [Mac](https://github.com/rubixchain/rubixnetwork/blob/master/mac.md) / [Linux](https://github.com/rubixchain/rubixnetwork/blob/master/linux.md) / [Windows](https://github.com/rubixchain/rubixnetwork/blob/master/windows.md)
-2. Installation Procedure for Virtual Machine depending on your OS - [Mac](https://github.com/rubixchain/rubixnetwork/blob/master/mac-vm.md) / [Linux](https://github.com/rubixchain/rubixnetwork/blob/master/linux-vm.md) / [Windows](https://github.com/rubixchain/rubixnetwork/blob/master/windows-vm.md)
+1. Follow the Rubix Installation Procedure (including wallet) depending on your OS - [Mac](https://github.com/rubixchain/rubixnetwork/blob/master/mac.md) / [Linux](https://github.com/rubixchain/rubixnetwork/blob/master/linux.md) / [Windows](https://github.com/rubixchain/rubixnetwork/blob/master/windows.md)
+2. Installation Procedure for Virtual Machine Node depending on your OS - [Mac](https://github.com/rubixchain/rubixnetwork/blob/master/mac-vm.md) / [Linux](https://github.com/rubixchain/rubixnetwork/blob/master/linux-vm.md) / [Windows](https://github.com/rubixchain/rubixnetwork/blob/master/windows-vm.md)
 3. You can query at [Rubix Discussion Forum](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
 
 # Useful Links
