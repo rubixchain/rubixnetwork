@@ -242,9 +242,9 @@ curl --header "Content-Type: application/json" --request GET http://localhost:18
 
 ## Add bootstrap
 
-Add input bootstrap id to the boostrap list
+Add bootstrap id to the boostrap list
 ```
-curl --header "Content-Type: application/json" --request GET http://localhost:1898/bootstrap
+curl --header "Content-Type: application/json" --request GET http://localhost:1898/bootstrap?id="<bootstrap-id>"
 ```
 
 ***Request Type***:    POST
@@ -254,9 +254,9 @@ curl --header "Content-Type: application/json" --request GET http://localhost:18
 
 ## Remove bootstrap
 
-Remove input boostrap id from the boostrap list
+Remove boostrap id from the boostrap list
 ```
-curl --header "Content-Type: application/json" --request GET http://localhost:1898/bootstrap
+curl --header "Content-Type: application/json" --request GET http://localhost:1898/bootstrap?id="<bootstrap-id>"
 ```
 
 ***Request Type***:    DELETE
