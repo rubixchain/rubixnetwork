@@ -252,7 +252,7 @@ curl --header "Content-Type: application/json" --request GET http://localhost:18
 ***Input***:   Bootstrap ID
 ***Returns***: Response (String)
 
-## Add bootstrap
+## Remove bootstrap
 
 Remove input boostrap id from the boostrap list
 ```
