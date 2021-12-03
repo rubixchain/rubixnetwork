@@ -250,7 +250,7 @@ curl --header "Content-Type: application/json" --request GET http://localhost:18
 ***Request Type***:    POST
 ***Port***:     1898
 ***Input***:   Bootstrap ID
-***Returns***: nill
+***Returns***: Response (String)
 
 ## Add bootstrap
 
@@ -262,4 +262,4 @@ curl --header "Content-Type: application/json" --request GET http://localhost:18
 ***Request Type***:    DELETE
 ***Port***:     1898
 ***Input***:   Bootstrap ID
-***Returns***: nill
+***Returns***: Response (String)
