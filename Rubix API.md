@@ -3,7 +3,9 @@
 ## DID Creation
 
 Creates a unique Decentralized IDentity 
-> $ curl --location --request POST 'http://localhost:1898/create' --form 'data="Rubik"' --form 'image=@"imagepath"'
+```
+curl --location --request POST 'http://localhost:1898/create' --form 'data="Rubik"' --form 'image=@"imagepath"'
+```
 
 
 ***Request Type***:    POST
@@ -15,7 +17,9 @@ Creates a unique Decentralized IDentity
 ## Initial Setup
 
 Does the initial setup of IPFS and syncing the network nodes
->$ curl --header "Content-Type: application/json" --request GET 'http://localhost:1898/start'
+```
+curl --header "Content-Type: application/json" --request GET 'http://localhost:1898/start'
+```
 
 ***Request Type***:    GET
 ***Port***:            1898
@@ -26,7 +30,9 @@ Does the initial setup of IPFS and syncing the network nodes
 ## Transfer Tokens
 
 Transfers token(s) from one wallet address to another 
-> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/initiateTransaction --data '{ "receiver": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "tokenCount":1, "comment":"transaction comments", "type":1}' 
+```
+curl --header "Content-Type: application/json" --request POST http://localhost:1898/initiateTransaction --data '{ "receiver": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "tokenCount":1, "comment":"transaction comments", "type":1}' 
+```
 
 ***Request Type***:    POST
 ***Port***:            1898
@@ -36,7 +42,9 @@ Transfers token(s) from one wallet address to another
 ## Account Information
 Retrieves the user account details 
 
->$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/getAccountInfo
+```
+curl --header "Content-Type: application/json" --request GET http://localhost:1898/getAccountInfo
+```
 
 ***Request Type***:    GET
 ***Port***:     1898
@@ -47,7 +55,9 @@ Retrieves the user account details
 ## Get Transaction Details with Transaction ID
 
 Details of a particular transaction like Quorum involved, token transferred, receiver details, time and more
-> $ curl --header "Content-Type: application/json" --request POST  http://localhost:1898/getTxnDetails --data '{"transactionID": "e76547ab5f3b08bd42e0e6b2b9996a81ca4481e2554eb28e20ef09b636474des"}'
+```
+curl --header "Content-Type: application/json" --request POST  http://localhost:1898/getTxnDetails --data '{"transactionID": "e76547ab5f3b08bd42e0e6b2b9996a81ca4481e2554eb28e20ef09b636474des"}'
+```
 
 ***Request Type***:    POST
 ***Port***:     1898
@@ -58,8 +68,10 @@ Details of a particular transaction like Quorum involved, token transferred, rec
 ## Get Transaction Details with Date
 
 Retrieves the details of all the transactions committed during the specified period
-> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByDate --data-raw '{"sDate":"Wed Jun 09 12:56:04 AST 2021",
+```
+curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByDate --data-raw '{"sDate":"Wed Jun 09 12:56:04 AST 2021",
 "eDate":"Wed Jun 09 12:57:58 AST 2021"}'
+```
  
  ***Request Type***:    POST
 ***Port***:     1898
@@ -69,7 +81,9 @@ Retrieves the details of all the transactions committed during the specified per
 ## Get Transaction Details with Comment
 
 Retrieves the details of all the transactions committed with the specified comment
-> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByComment --data '{"comment":"First"}' 
+```
+curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByComment --data '{"comment":"First"}'
+```
  
  ***Request Type***:    POST
 ***Port***:     1898
@@ -79,7 +93,9 @@ Retrieves the details of all the transactions committed with the specified comme
 ## Get Transaction Details with Count
 
 Retrieves the last specified count of transactions committed 
-> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByCount --data '{"txnCount" : 3}' 
+```
+curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByCount --data '{"txnCount" : 3}' 
+```
  
  ***Request Type***:    POST
 ***Port***:     1898
@@ -89,8 +105,10 @@ Retrieves the last specified count of transactions committed
 ## Get Transaction Details with User's DID
 
 Retrieves all the transactions made with the input DID
-> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByDID
+```
+curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByDID
  --data '{"did" : "QmdkrLpyoGFrhsbeuZrXpcvr2QRsLuQnrbXVfJTe1yXqzy"}' 
+ ```
  
  ***Request Type***:    POST
 ***Port***:     1898
@@ -100,7 +118,9 @@ Retrieves all the transactions made with the input DID
 ## Get Transaction Details by Range
 
 Retrieves all the transactions made with the input DID
-> $ curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByRange --data-raw '{"startRange":1, "endRange":4}'
+```
+curl --header "Content-Type: application/json" --request POST http://localhost:1898/getTxnByRange --data-raw '{"startRange":1, "endRange":4}'
+```
  
  ***Request Type***:    POST
 ***Port***:     1898
@@ -111,7 +131,9 @@ Retrieves all the transactions made with the input DID
 ## Get Transaction Header Details
 
 Summarize transaction information
-> $ curl --header "Content-Type: application/json" --request GET 'http://localhost:1898/getTransactionHeader'
+```
+curl --header "Content-Type: application/json" --request GET 'http://localhost:1898/getTransactionHeader'
+```
  
  ***Request Type***:    GET
 ***Port***:     1898
@@ -121,7 +143,9 @@ Summarize transaction information
 
 ## List of Tokens
 Lists out all the tokens available in the user's wallet
->$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/viewTokens
+```
+curl --header "Content-Type: application/json" --request GET http://localhost:1898/viewTokens
+```
 
 ***Request Type***:    GET
 ***Port***:     1898
@@ -131,7 +155,9 @@ Lists out all the tokens available in the user's wallet
 ## List of Peers Online
 
 Lists all your contacts currently available online
->$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/getOnlinePeers
+```
+curl --header "Content-Type: application/json" --request GET http://localhost:1898/getOnlinePeers
+```
 
 ***Request Type***:    GET
 ***Port***:     1898
@@ -141,7 +167,9 @@ Lists all your contacts currently available online
 ## View Contacts 
 
 Lists all contacts in your addressbook
->$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/getContactsList
+```
+curl --header "Content-Type: application/json" --request GET http://localhost:1898/getContactsList
+```
 
 ***Request Type***:    GET
 ***Port***:     1898
@@ -151,7 +179,9 @@ Lists all contacts in your addressbook
 ## View Network Nodes 
 
 Lists all the nodes in the network
->$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/getNetworkNodes
+```
+curl --header "Content-Type: application/json" --request GET http://localhost:1898/getNetworkNodes
+```
 
 ***Request Type***:    GET
 ***Port***:     1898
@@ -161,7 +191,9 @@ Lists all the nodes in the network
 ## View Network Nodes 
 
 Add an easier and convinient name to your contacts
->$ curl --location --request POST 'http://localhost:1898/addNickName' --form 'did="QmaGVzjsv4JnQSRdmCfWeMaBPiCTDf8y6scHNfmkRmEfc0"' --form 'nickname="User123"'
+```
+curl --location --request POST 'http://localhost:1898/addNickName' --form 'did="QmaGVzjsv4JnQSRdmCfWeMaBPiCTDf8y6scHNfmkRmEfc0"' --form 'nickname="User123"'
+```
 
 ***Request Type***:    POST
 ***Port***:     1898
@@ -173,7 +205,9 @@ Add an easier and convinient name to your contacts
 ## Details for Dashboard
 
 Lists all required details of user's wallet
->$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/getDashboard
+```
+curl --header "Content-Type: application/json" --request GET http://localhost:1898/getDashboard
+```
 
 ***Request Type***:    GET
 ***Port***:     1898
@@ -184,7 +218,9 @@ Lists all required details of user's wallet
 ## Close Streams
 
 To close all the streams open
->$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/p2pClose
+```
+curl --header "Content-Type: application/json" --request GET http://localhost:1898/p2pClose
+```
 
 ***Request Type***:    GET
 ***Port***:     1898
@@ -194,7 +230,9 @@ To close all the streams open
 ## Synchronise Network Nodes
 
 To synchronize the DIDs of the systems, so that the node will have an updated list of all the DIDs in the network.
->$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/sync
+```
+curl --header "Content-Type: application/json" --request GET http://localhost:1898/sync
+```
 
 ***Request Type***:    GET
 ***Port***:     1898
@@ -202,12 +240,26 @@ To synchronize the DIDs of the systems, so that the node will have an updated li
 ***Returns***: nill
 
 
-## Shutdown
+## Add bootstrap
 
-Closes all application processes and exits 
->$ curl --header "Content-Type: application/json" --request GET http://localhost:1898/shutdown
+Add input bootstrap id to the boostrap list
+```
+curl --header "Content-Type: application/json" --request GET http://localhost:1898/bootstrap
+```
 
-***Request Type***:    GET
+***Request Type***:    POST
 ***Port***:     1898
-***Input***:   nill
+***Input***:   Bootstrap ID
+***Returns***: nill
+
+## Add bootstrap
+
+Remove input boostrap id from the boostrap list
+```
+curl --header "Content-Type: application/json" --request GET http://localhost:1898/bootstrap
+```
+
+***Request Type***:    DELETE
+***Port***:     1898
+***Input***:   Bootstrap ID
 ***Returns***: nill
