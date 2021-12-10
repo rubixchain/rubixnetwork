@@ -40,7 +40,7 @@ curl --header "Content-Type: application/json" --request POST http://localhost:1
 ***Returns***:         Transaction ID (String), Success / Failure (Boolean), DID (String)
 
 
-## Validate Files
+## Commit File Blocks
 
 Transfers token(s) from one wallet address to another 
 ```
