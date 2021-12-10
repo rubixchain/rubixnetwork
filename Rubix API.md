@@ -39,6 +39,20 @@ curl --header "Content-Type: application/json" --request POST http://localhost:1
 ***Input***:           receiver (String), tokenCount (Integer), comment (String)
 ***Returns***:         Transaction ID (String), Success / Failure (Boolean), DID (String)
 
+
+## Validate Files
+
+Transfers token(s) from one wallet address to another 
+```
+curl --header "Content-Type: application/json" --request POST http://localhost:1898/commitBlock --data '{ "blockHash": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "comment":"transaction comments", "type":1}'
+```
+
+***Request Type***:    POST
+***Port***:            1898
+***Input***:           blockHash (String), comment (String)
+***Condition***: Sender should have atleast one valit Rubix Token in the wallet
+***Returns***:         Transaction ID (String), Success / Failure (Boolean), DID (String)
+
 ## Account Information
 Retrieves the user account details 
 
