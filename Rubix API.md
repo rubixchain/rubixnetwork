@@ -9,7 +9,7 @@ curl --location --request POST 'http://localhost:1898/create' --form 'data="Rubi
 
 **Image needed to create Decetralized ID**
 
-While creating a new DID, user has to provide a 256x256 PNG format image as a parameter along with a Passphrase string. Private Key, Wallet ID and DID are generated using this image and passphrase. 
+While creating a new DID, user has to provide any 256x256 PNG format image as a parameter along with a Passphrase string. Private Key, Wallet ID and DID are generated using this image and passphrase. 
 
 ----
 
