@@ -47,7 +47,7 @@ curl --header "Content-Type: application/json" --request POST http://localhost:1
 
 ## Commit File Blocks
 
-Transfers token(s) from one wallet address to another 
+Commit a file block to quorum members for storage
 ```
 curl --header "Content-Type: application/json" --request POST http://localhost:1898/commitBlock --data '{ "blockHash": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "comment":"transaction comments", "type":1}'
 ```
@@ -55,8 +55,22 @@ curl --header "Content-Type: application/json" --request POST http://localhost:1
 ***Request Type***:    POST
 ***Port***:            1898
 ***Input***:           blockHash (String), comment (String)
-***Condition***: Sender should have atleast one valit Rubix Token in the wallet
+***Condition***: Sender should have atleast one valid Rubix Token in the wallet
 ***Returns***:         Transaction ID (String), Success / Failure (Boolean), DID (String)
+
+
+## Validate File Blocks
+
+Validate files stored by quorum members 
+```
+curl --header "Content-Type: application/json" --request POST http://localhost:1898/verifyBlock --data '{ "blockHash": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d"}'
+```
+
+***Request Type***:    POST
+***Port***:            1898
+***Input***:           blockHash (String)
+***Condition***: Given block file hash should be already commited for validation before. 
+***Returns***:         Hash of each input file given in blockHash file and number of validators storing it in blockchain, Success / Failure (Boolean)
 
 ## Account Information
 Retrieves the user account details 
