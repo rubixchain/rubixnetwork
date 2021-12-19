@@ -49,7 +49,7 @@ curl --header "Content-Type: application/json" --request POST http://localhost:1
 
 Commit a file block to quorum members for storage
 ```
-curl --header "Content-Type: application/json" --request POST http://localhost:1898/commitBlock --data '{ "blockHash": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "comment":"transaction comments", "type":1}'
+curl --header "Content-Type: application/json" --request POST http://localhost:1898/commitBlock --data '{ "blockHash": "QmYEjeo4bsj2tLfcSY26HFFWJhtabt8AAgp7npYziwR7bS", "comment":"contains metadata", "type":1}'
 ```
 
 ***Request Type***:    POST
