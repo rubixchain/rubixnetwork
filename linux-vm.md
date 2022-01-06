@@ -36,7 +36,7 @@ Download Rubix Jar File here [here](https://github.com/rubixchain/rubixnetwork/r
 
 Run the following command in terminal to start the Jar
 ```
-> java -jar Rubix-1.3.jar
+> java -jar Rubix.jar
 ```
 
 Your node is ready! 🚀
