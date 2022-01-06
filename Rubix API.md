@@ -36,7 +36,7 @@ curl --header "Content-Type: application/json" --request GET 'http://localhost:1
 
 Transfers token(s) from one wallet address to another 
 ```
-curl --header "Content-Type: application/json" --request POST http://localhost:1898/initiateTransaction --data '{ "receiver": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "tokenCount":1, "comment":"transaction comments", "type":1}' 
+curl --header "Content-Type: application/json" --request POST http://localhost:1898/initiateTransaction --data '{ "receiver": "<receiver DID here>", "tokenCount":1, "comment":"transaction comments", "type":1}' 
 ```
 
 ***Request Type***:    POST
@@ -49,7 +49,7 @@ curl --header "Content-Type: application/json" --request POST http://localhost:1
 
 Commit a file block to quorum members for storage
 ```
-curl --header "Content-Type: application/json" --request POST http://localhost:1898/commitBlock --data '{ "blockHash": "445f59c3d71c6769124470cf4b82ca0b9b1626aec4f14f50a8f1e6a13e1fc70d", "comment":"transaction comments", "type":1}'
+curl --header "Content-Type: application/json" --request POST http://localhost:1898/initiateTransaction --data '{ "blockHash": "<block hash file contains IPFS hash of all metadata to be pinned by quorum>", "tokenCount":1, "comment":"transaction comments", "type":1}' 
 ```
 
 ***Request Type***:    POST
