@@ -32,11 +32,11 @@ IPFS Private Network Setup is Successfully Finished ✅
 
 ### For detailed setup instructions, please refer to the [Rubix Setup Guide](https://github.com/rubixchain/rubixnetwork/raw/master/Instructions%20on%20installing%20Rubix%20on%20Cloud%20VM.pdf)
       
-Download Rubix Jar File here [here](https://github.com/rubixchain/rubixnetwork/raw/master/Rubix-1.4.jar)
+Download Rubix Jar File here [here](https://github.com/rubixchain/rubixnetwork/raw/master/Rubix.jar)
 
 Run the following command in terminal to start the Jar
 ```
-> java -jar Rubix-1.4.jar
+> java -jar Rubix.jar
 ```
 
 Your node is ready! 🚀
