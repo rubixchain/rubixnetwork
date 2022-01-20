@@ -21,6 +21,7 @@ Download the [Script and Swarm key](https://github.com/rubixchain/rubixsetup/raw
 
 1. Double click the `init.bat` file
 2. Open a new terminal and run the following command to start the daemon
+
  ```
  > ipfs daemon
  ```
@@ -29,12 +30,12 @@ IPFS Private Network Setup is Successfully Finished ✅
 
 ### For detailed setup instructions, please refer to the [Rubix Setup Guide](https://github.com/rubixchain/rubixnetwork/raw/master/Instructions%20on%20installing%20Rubix%20on%20Cloud%20VM.pdf)
 
-Download Rubix Jar File here [here](https://github.com/rubixchain/rubixnetwork/raw/master/Rubix.jar)
+Download Rubix Jar File here [here](https://github.com/rubixchain/rubixnetwork/raw/master/Rubix-1.5.jar)
 
 Run the following command in command prompt to start the Jar
 
 ```
-> java -jar Rubix.jar
+> java -jar Rubix-1.5.jar
 ```
 
 Your node is ready! 🚀
