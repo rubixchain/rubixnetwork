@@ -30,7 +30,7 @@ Download the [Script and Swarm key](https://github.com/rubixchain/rubixsetup/raw
 
 IPFS Private Network Setup is Successfully Finished ✅
 
-### For detailed setup instructions, please refer to the [Rubix Setup Guide](https://github.com/rubixchain/rubixnetwork/blob/master/Instructions%20on%20installing%20Rubix%20on%20CloudVM.pdf)
+### For detailed setup instructions, please refer to the [Rubix Setup Guide](https://github.com/rubixchain/rubixnetwork/raw/master/Rubix%20Node%20Installation%20Instructions_%20Command%20Line%20-%20Linux.pdf)
       
 Download Rubix Jar File here [here](https://github.com/rubixchain/rubixnetwork/blob/master/Rubix.jar?raw=true)
 
