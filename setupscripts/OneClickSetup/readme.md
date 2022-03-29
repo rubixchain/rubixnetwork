@@ -16,6 +16,7 @@ You just have to run the One-Click dependency and then download the Rubix Wallet
 1) Open a fresh instance of terminal and run the following commands (without $)
   a) $ chmod +x RubixOneClickSetup-MacOS
   b) $ ./RubixOneClickSetup-MacOS
+  c) Provide user password when asked
 ```
 
 #### Linux
@@ -23,12 +24,16 @@ You just have to run the One-Click dependency and then download the Rubix Wallet
 1) Open a fresh instance of terminal and run the following commands (without $)
   a) $ chmod +x RubixOneClickSetup-Linux
   b) $ ./RubixOneClickSetup-Linux
+  c) Provide user password when asked
+
 ```
 
 #### Windows
 ```
-1) Download the One-Click Setup
-  a) Double-click and run the exe
+1) Open a fresh instance of cmd.exe under download path and run the following commands (without $)
+  a) $ RubixOneClickSetup-Windows.exe
+  b) Provide user password when asked
+
 ```
 
 Download latest version of Rubix GUI Wallet from [here](https://github.com/rubixchain/wallet/releases)
