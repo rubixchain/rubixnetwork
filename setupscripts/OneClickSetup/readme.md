@@ -1,28 +1,31 @@
-Download the One-Click dependency setup for easier setup of Rubix Nodes
+# One-Click dependency for seamless setup of Rubix Wallet
+Facing issue setting up Rubix Node? Use our One-Click dependency setup.
 
-# Download links
+You just have to run the One-Click dependency and then download the Rubix Wallet
+
+## Download links
 [MacOS](https://github.com/rubixchain/rubixnetwork/blob/master/setupscripts/OneClickSetup/RubixOneClickSetup-MacOS)
 
 [Linux](https://github.com/rubixchain/rubixnetwork/blob/master/setupscripts/OneClickSetup/RubixOneClickSetup-Linux)
 
 [Windows](https://github.com/rubixchain/rubixnetwork/blob/master/setupscripts/OneClickSetup/RubixOneClickSetup-Windows.exe)
 
-# Installation Steps
-## MacOS
+## Installation Steps
+#### MacOS
 ```
 1) Open a fresh instance of terminal and run the following commands (without $)
   a) $ chmod +x RubixOneClickSetup-MacOS
   b) $ ./RubixOneClickSetup-MacOS
 ```
 
-## Linux
+#### Linux
 ```
 1) Open a fresh instance of terminal and run the following commands (without $)
   a) $ chmod +x RubixOneClickSetup-Linux
   b) $ ./RubixOneClickSetup-Linux
 ```
 
-## Windows
+#### Windows
 ```
 1) Download the One-Click Setup
   a) Double-click and run the exe
