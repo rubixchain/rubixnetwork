@@ -53,4 +53,4 @@ This Project is currently developed in Java. Multi-Language support will be avai
 
 * Specifications of Rubix - [specs](https://rubix.network/)
 
-* White Paper - [paper](https://github.com/rubixchain/rubixnetwork/blob/master/RubiX_WhitePaper_R1.7.pdf)
+* White Paper - [paper](https://github.com/rubixchain/rubixnetwork/raw/master/RubiX_WhitePaper%20R1.8.pdf)
