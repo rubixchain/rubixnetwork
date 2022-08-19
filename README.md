@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://rubix.network">
+  <a href="https://rubix.net">
     <img alt="Solana" src="https://i.imgur.com/6vToeX2.png" width="150" />
   </a>
 </p>
@@ -23,11 +23,11 @@ A deterministic state-machine that is designed to address the scale, cost, and p
 3. You can query at [Rubix Discussion Forum](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
 
 # Useful Links
-* [Website](https://rubix.network/)
-* [Documentation](https://rubix.network/)
+* [Website](https://rubix.net/)
+* [Documentation](https://learn.rubix.net/)
 * [Twitter](https://twitter.com/RubixChain)
 * [Telegram](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
-* [Discussion Forum](https://t.me/joinchat/FVW78xbBBvefEUSBB0p4Fw)
+* [Other Links](https://linktr.ee/rubix.net)
 
 # Project Private Links
 
@@ -51,6 +51,6 @@ This Project is currently developed in Java. Multi-Language support will be avai
 
 # Specs and Papers
 
-* Specifications of Rubix - [specs](https://rubix.network/)
+* Specifications of Rubix - [specs](https://rubix.net/)
 
 * White Paper - [paper](https://github.com/rubixchain/rubixnetwork/raw/master/RubiX_WhitePaper%20R1.8.pdf)
