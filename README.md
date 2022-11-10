@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://rubix.net">
-    <img alt="Solana" src="https://i.imgur.com/6vToeX2.png" width="150" />
+    <img alt="RubixChain" src="https://i.imgur.com/uVtVS7B.png" width="150" />
   </a>
 </p>
 
